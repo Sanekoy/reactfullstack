@@ -9,6 +9,9 @@ class Department {
     return this.Salary[index];
   }
 
+//drfgfdss
+//vuyu
+
   GetSalary(){
     return this.Salary;
   }
