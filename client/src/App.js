@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <button > 
+      <button color="green" shadowSize={2}> 
         hello world
       </button>
       <label>
