@@ -1,14 +1,11 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./Components/Header";
 
 function App() {
   return (
     <div className="App">
-      <button color="green" shadowSize={2}> 
-        hello world
-      </button>
-      <label>
-        hi
-      </label>
+      <Header/>
     </div>
   );
 }
