@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Button, Container, Form, FormControl, Nav, Navbar,} from "react-bootstrap";
+import { Button, Container, Form, FormControl, Nav, Navbar} from "react-bootstrap";
 import logo from "./HalfLifelogo.jpg";
 
 export default class Header extends Component {
   render() {
     return (
+      <>
       <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
         <Container>
           <Navbar.Brand href="/">
@@ -13,7 +14,7 @@ export default class Header extends Component {
               height="30"
               width="30"
               className="d-inline-block align-top"
-              alt="logo"
+              alt="Logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -23,6 +24,9 @@ export default class Header extends Component {
               <Nav.Link href="/about"> About us </Nav.Link>
               <Nav.Link href="/contacts"> Contacts </Nav.Link>
               <Nav.Link href="/blog"> Blog </Nav.Link>
+            </Nav>
+            <Nav className="ms-auto">
+            <Nav.Link href="/sandbox"> SandBox </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
@@ -35,6 +39,7 @@ export default class Header extends Component {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </>
     );
   }
 }

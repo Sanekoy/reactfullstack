@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
+import Content from "./Components/Content";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header/>
+      <Content/>
+      <Footer/>
     </div>
   );
 }
